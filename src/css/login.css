@@ -1,0 +1,45 @@
+/* Estilos específicos para a página de login */
+
+#login-form {
+    /* Garante a mesma base do cadastro, mas pode ser ajustado se precisar */
+}
+
+.login-btn-group {
+    display: flex;
+    gap: 18px;
+    margin-top: 14px;
+}
+
+.login-btn {
+    background: #2690c9;
+    color: #fff;
+    font-size: 1.06rem;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 36px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(38,144,201,0.09);
+    transition: background 0.15s;
+}
+
+.login-btn:hover {
+    background: #196aa0;
+}
+
+.recover-btn {
+    background: #959ea1;
+    color: #fff;
+    font-size: 1.06rem;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 34px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(149,158,161,0.09);
+    transition: background 0.15s;
+}
+
+.recover-btn:hover {
+    background: #7d878a;
+}
