@@ -26,20 +26,27 @@
     <main>
         <section class="form-container">
             <h2>Cadastro de Estudante</h2>
-            <form>
-                <label for="matricula">Matrícula (apenas números):</label>
-                <input type="text" id="matricula" placeholder="Ex: 20241234567" pattern="\d*">
+            <form method="POST" action="cadastrar.php">
+                <!-- <label for="matricula">Matrícula (apenas números):</label>
+                <input type="text" id="matricula" placeholder="Ex: 20241234567" pattern="\d*"> -->
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required maxlength="30">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required maxlength="30">
 
                 <label for="email">E-mail Institucional:</label>
-                <input type="email" id="email" placeholder="exemplo@ufersa.edu.br">
+                <input type="email" id="email" name="email" placeholder="exemplo@ufersa.edu.br" required maxlength="40">
 
-                <label for="usuario">Usuário (mínimo 6 caracteres):</label>
-                <input type="text" id="usuario" placeholder="Digite seu usuário" minlength="6">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8" maxlength="15">
 
-                <label for="senha">Senha (mínimo 8 caracteres, 1 maiúscula, 1 número):</label>
-                <input type="password" id="senha" placeholder="Digite sua senha" minlength="8">
+                <label for="confSenha">Confirmar Senha:</label>
+                <input type="password" id="confSenha" name="confSenha" placeholder="Confirme sua senha" required minlength="8" maxlength="15">
 
                 <button type="submit" class="submit-btn">CADASTRAR</button>
+                <p style="margin-top:16px;">Já tem cadastro? <a href="index.html">Entrar</a></p>
             </form>
         </section>
     </main>
