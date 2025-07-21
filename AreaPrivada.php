@@ -1,0 +1,40 @@
+<?php
+session_start();
+if(!isset($_SESSION['id_usuario'])) {
+    header("location: index.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CabUFERSA AG - Área Privada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <header class="main-header">
+            <h1>CabUFERSA AG</h1>
+            <p class="subtitle">
+                Sistema de Controle de Reservas de Cabines de Estudos<br>
+                Universidade Federal Rural do Semi-Árido - Campus Angicos
+            </p>
+        </header>
+        <nav class="main-nav">
+            <a href="AreaPrivada.php" class="nav-btn active">Início</a>
+            <a href="#" class="nav-btn">Reservas</a>
+            <a href="#" class="nav-btn">Panorama</a>
+            <a href="#" class="nav-btn">Minhas Reservas</a>
+            <a href="sair.php" class="nav-btn">Sair</a>
+        </nav>
+    </div>
+    <main>
+        <section class="form-container">
+            <h2>Bem-vindo à sua área privada!</h2>
+            <p>Você está autenticado no sistema.</p>
+        </section>
+    </main>
+</body>
+</html>
