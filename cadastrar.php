@@ -35,6 +35,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>CabUFERSA AG - Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <style>
+        .msgErro, .msgSucesso {
+            margin-bottom: 12px;
+            padding: 12px 14px;
+            border-radius: 9px;
+            font-size: 1.04rem;
+            font-weight: 500;
+        }
+        .msgErro { background: #ffd6d6; color: #a94442; border: 1px solid #f5c6cb;}
+        .msgSucesso { background: #d6f5d6; color: #256029; border: 1px solid #b9e6b9;}
+    </style>
 </head>
 <body>
     <div class="header-container">
